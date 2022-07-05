@@ -1,7 +1,7 @@
 """
     M. Ashuza 
     july 5 2022
-    Python Crash Course Book chapter 4 Exrcises 
+    Python Crash Course Book chapter 4 Exercises 
 """
 # Qestion1 4-1. Pizzas
 my_favorite_pizzas = ['Neapolitan  Pizza', 'Chicago Pizza', 'New York-Style Pizza', ' Sicilian Pizza', 'Greek Pizza']
