@@ -4,7 +4,10 @@
     Python Crash Course Book chapter 4 Exercises 
 """
 # Qestion1 4-1. Pizzas
+import enum
 import numbers
+from traceback import print_tb
+from tracemalloc import start
 
 
 my_favorite_pizzas = ['Neapolitan  Pizza', 'Chicago Pizza', 'New York-Style Pizza', ' Sicilian Pizza', 'Greek Pizza']
@@ -76,7 +79,35 @@ for num in range(1, 10):
 for num in cubes:
     print(num)
 print("\n The same dolution with list comprehession")
+# Question9 4-8. Cubes: 
 ## Same dolutin with list comprehension
 cubes = [num**3 for num in range(1, 10)]
 for num in cubes:
     print(num)
+print("\n")
+
+# Question10 4-10. Slices:
+my_favorite_pizzas = ['Neapolitan  Pizza', 'Chicago Pizza', 'New York-Style Pizza', ' Sicilian Pizza', 'Greek Pizza']
+for number, pizzas in enumerate(my_favorite_pizzas[:3], start=1):
+    print(f"The {number} three items in the list are {pizzas}\n")
+
+print(f"\nThree items from the middle of the list are:{my_favorite_pizzas[1:4]}")
+
+print(f"\nThe last three items in the list are::{my_favorite_pizzas[-3:]}\n")
+
+# Question11 4-11. My Pizzas, Your Pizzas:
+friend_pizzas = my_favorite_pizzas[:] 
+print(friend_pizzas)
+friend_pizzas.append('Goma pizza')
+print(friend_pizzas)
+print(my_favorite_pizzas)
+print("\n")
+
+print("My favorite pizzas are:")
+for i, pizza in enumerate(my_favorite_pizzas, start=1):
+    print(i, pizza)
+
+print("\nMy friend’s favorite pizzas are:")
+for i, pizza in enumerate(friend_pizzas, start=1):
+    print(i, pizza)
+
