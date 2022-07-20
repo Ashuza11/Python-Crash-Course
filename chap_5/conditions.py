@@ -45,3 +45,32 @@ if  favrite_fruit in fruits:
     print(f"{favrite_fruit.title()} is my favorite fruit.")
 elif favrite_fruit not in fruits:
     print(f"{favrite_fruit.title()} is not my favorite fruit.")
+
+print("\n")
+# Question 5-3. Alien Colors #1
+alien_color = 'green'
+
+if alien_color == 'green':
+    print("You just earned 5 points.")
+
+alien_color = 'red'
+if alien_color != 'yellow':
+    print("fails.")
+print("\n")
+
+# Question 5-4. Alien Colors #2I
+    # With if - if chane 
+alien_color = 'green'
+
+if alien_color == 'green':
+    print("You just earned 5 points for shooting the alien.")
+if alien_color != 'green':
+    print("You just earned 10 points.")
+print("\n if elif satement")  
+    # Witn if - elif statment 
+alien_color = 'green'
+
+if alien_color == 'green':
+    print("You just earned 5 points for shooting the alien.")
+elif alien_color == 'yellow':
+    print("You just earned 10 points.")
