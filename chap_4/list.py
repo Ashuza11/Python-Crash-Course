@@ -4,10 +4,6 @@
     Python Crash Course Book chapter 4 Exercises 
 """
 # Qestion1 4-1. Pizzas
-import enum
-import numbers
-from traceback import print_tb
-from tracemalloc import start
 
 
 my_favorite_pizzas = ['Neapolitan  Pizza', 'Chicago Pizza', 'New York-Style Pizza', ' Sicilian Pizza', 'Greek Pizza']
@@ -110,4 +106,15 @@ for i, pizza in enumerate(my_favorite_pizzas, start=1):
 print("\nMy friend’s favorite pizzas are:")
 for i, pizza in enumerate(friend_pizzas, start=1):
     print(i, pizza)
+print("\n")
+
+# Question 4-13. Buffet
+foods = ("pizza", "humbourger", "rice", "meet", "coffe")
+for food in foods:
+    print(food)
+print("\n")
+
+update_foods = ("beans", "donut", "ugali", "potatos", "chawarma")
+for food in update_foods:
+    print(food)
 
