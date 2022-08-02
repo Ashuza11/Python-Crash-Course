@@ -5,11 +5,6 @@
 """
 # Question 8-9. Magicians
 
-
-from cgi import print_arguments
-from cmath import phase
-
-
 def show_magicians(names):
     """Print a list of name's in a list"""
     print("The magician names are: ")

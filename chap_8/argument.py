@@ -5,10 +5,6 @@
 """
 
 # Question 8-3. T-Shirt
-from sre_constants import AT_LOC_BOUNDARY
-
-from matplotlib import artist
-
 
 def make_shirt(size, text):
     print(f"The shirt will be of size {size.title()} and the message printed on it will be {text.title()}.")

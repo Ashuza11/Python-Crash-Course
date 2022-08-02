@@ -3,11 +3,8 @@
     july 26 2022
     Python Crash Course Book chapter 8 Exercises 
 """
-
+from printing_fuction import display_message
 # Question 8-1. Message
-def display_message():
-    print("Hello everyone i am learning about functions.")
-    
 display_message()
 print("\n")
 # Question 8-2. Favorite Book
