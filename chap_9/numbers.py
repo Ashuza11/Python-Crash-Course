@@ -65,28 +65,34 @@ class Users():
         name = self.last_name
         sex = self.sex
         age = self.age
+        login = self.login_attempts
         print("User profile Info:"+" " + username.title()+", " + name.title()+", " + sex.title()+", "+ str(age)+ ".")
+        print(f"User login {login} times")
 
     def greet_user(self):
         """Simulating a welcoming user back"""
         username = self.first_name
         print(f"Hello ! {username} thanks and welcome back.")
 
-    def increment_login_attempts(self, attempt):
+    def increment_login_attempts(self):
         """Increment the value of login attempts by one"""
-        self.login_attempts += attempt
+        self.login_attempts += 1
+           
 
     def reset_login_attempts(self):
         """Rests the login attempts to 0"""
         self.login_attempts = 0
 
 user1 = Users('ashuza', 'albert', 'm', 19)
-user1 = Users('Jomo', 'Kinyata', 'm', 24)
+user2 = Users('Jomo', 'Kinyata', 'm', 24)
 
 user1.describe_user()
 user1.greet_user()
 print("\n")
+for i in range(1, 4):
+    user1.increment_login_attempts()
+    user1.describe_user()
+user1.reset_login_attempts()
+user1.describe_user()
 
-login1 = Users.increment_login_attempts(0, 1)
-print(f"Fist login: {login1}")
 
