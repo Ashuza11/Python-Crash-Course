@@ -1,10 +1,4 @@
-"""
-    M. Ashuza 
-    Auguest 10 2022
-    Python Crash Course Book chapter 9 Exercises 
-"""
-
-# Question 9-5. Login Attempts
+"""A class that can be used to represent a user"""
 
 class Users():
     """Simulating a user profile"""
@@ -40,34 +34,3 @@ class Users():
     def reset_login_attempts(self):
         """Rests the login attempts to 0"""
         self.login_attempts = 0
-
-
-# Question 9-8. Privileges: 
-class Privileges():
-    """Represent the admin's privileges"""
-    def __init__(self):
-        self.privileges = ["can add post" , "can delete post" , "can ban user"]
-
-    def show_privileges(self):
-        """Show a list of privileges"""
-        for privilege in self.privileges:
-            print("* " + privilege)
-
-
-# Question 9-7. Admin
-
-class Admin(Users):
-    """Represent a specific kind of user"""
-    def __init__(self, first_name, last_name, sex, age):
-        """Initialize attributes of parentclass."""
-        super().__init__(first_name, last_name, sex, age)
-        self.email = "dan@gmail.com"
-        self.privilege = Privileges()
-
-
-admin = Admin("Dan", "Ash", "M", 35)
-admin.describe_user()
-print("This is the admin privileges: ")
-admin.privilege.show_privileges()
-
-

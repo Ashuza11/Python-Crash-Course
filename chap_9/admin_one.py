@@ -1,10 +1,4 @@
-"""
-    M. Ashuza 
-    Auguest 10 2022
-    Python Crash Course Book chapter 9 Exercises 
-"""
-
-# Question 9-5. Login Attempts
+"""A class that can be used to represent a admin and his privileges"""
 
 class Users():
     """Simulating a user profile"""
@@ -63,11 +57,3 @@ class Admin(Users):
         super().__init__(first_name, last_name, sex, age)
         self.email = "dan@gmail.com"
         self.privilege = Privileges()
-
-
-admin = Admin("Dan", "Ash", "M", 35)
-admin.describe_user()
-print("This is the admin privileges: ")
-admin.privilege.show_privileges()
-
-
