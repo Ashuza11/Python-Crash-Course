@@ -3,42 +3,33 @@
     july 22 2022
     Python Crash Course Book chapter 6 Exercises 
 """
-# Question 6-1. Person
+# # Question 6-1. Person
+# persons_info = {'first_name': 'Mwendelwa', 'last_name': 'David', 'age': 20, 'city': 'Goma'}
+# print(persons_info)
+# for k, v in persons_info.items():
+#     print(k+':', v)
+# print("\n") 
 
-import numbers
+# # Question 6-2. Favorite Numbers
 
-
-persons_info = {'first_name': 'Mwendelwa', 'last_name': 'David', 'age': 20, 'city': 'Goma'}
-print(persons_info)
-for k, v in persons_info.items():
-    print(k+':', v)
-print("\n") 
-
-# Question 6-2. Favorite Numbers
-
-favorite_numbers = {'Alse': 3, 'Jomo': 4, 'yves': 2, 'Hugette': 6, 'Chrispin': 7}
-for k, v in favorite_numbers.items():
-    print(k+':'+' is number', v)
-print("\n")
+# favorite_numbers = {'Alse': 3, 'Jomo': 4, 'yves': 2, 'Hugette': 6, 'Chrispin': 7}
+# for k, v in favorite_numbers.items():
+#     print(k+':'+' is number', v)
+# print("\n")
 
 # Question 6-3. Glossary
+glossary = {'variable': 'A name which holds a value', 'function': 'A block of code for doing a given task', 'list': 'A data type which can holds many values'}
 
-# Think of five programming words you’ve learned about in the previous
-# chapters. Use these words as the keys in your glossary, and store their
-# meanings as values.
-glossary = {'varaible': 'A name which holds a value', 'fuction': 'A block of code for doing a given task', 'list': 'A data type which can holds many values'}
-# • Print each word and its meaning as neatly formatted output. You might
-# print the word followed by a colon and then its meaning, or print the word
-# on one line and then print its meaning indented on a second line. Use the
-# newline character ( \n ) to insert a blank line between each word-meaning
-# pair in your output
+print(f" A varaible is {glossary['variable']}")
+print(f" A function is {glossary['function']}")
+print(f" A list is {glossary['list']}")
 
+
+print("\n")
+# Question 6-4. Glossary 2
 for k, v in glossary.items():
     print(k.title()+':', v +'\n')
 print("\n")
-
-# Question 6-4. Glossary 2
-# To do task print key and value without a loop
 
 # Question 6-5. Rivers
 rivers = {'nil': 'egypt', 'river congo': 'DR Congo', 'Tanganyika': 'DR Congo'}

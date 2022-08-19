@@ -1,0 +1,7 @@
+I have learned how to install the python program on defferent systems 
+sach as windows linux and, or mac.
+In python i can user variables and simple datatypes.
+I can work with lists, use if statements, dictionaries.
+I can get the user input and use the while loops.
+I can use functions, classes.
+And now i am working on files and exceptions. 
